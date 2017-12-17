@@ -1,6 +1,11 @@
+[![Gem Version](https://badge.fury.io/rb/cryptoruby.svg)](https://badge.fury.io/rb/cryptoruby)
+[![Maintainability](https://api.codeclimate.com/v1/badges/bad219ce2847552d2d56/maintainability)](https://codeclimate.com/github/Hamdan85/cryptoruby/maintainability)
+[![Dependency Status](https://gemnasium.com/badges/github.com/Hamdan85/cryptoruby.svg)](https://gemnasium.com/github.com/Hamdan85/cryptoruby)
+[![Build Status](https://travis-ci.org/Hamdan85/cryptoruby.svg?branch=master)](https://travis-ci.org/Hamdan85/cryptoruby)
+
 # Cryptoruby
 
-How about to have your own blockchain? This gems allow you application to have it... 
+How about to have your own blockchain? This gems allow your application to have it... 
 
 ## Installation
 
@@ -36,13 +41,13 @@ blockchain << data
 
 You see... data can be anything. You can store strings, jsons, arrays, even base64 files.
 
-Then, after adding blocks, you'll need to check if your block is still valid right?
+Then, after adding blocks, you'll need to check if your chain is still valid right?
 ````ruby
 blockchain.is_valid? # returns true or false
 ````
-Try change something in the blocks and validating again... this works man... for real!
+Try changing something in the blocks and validating again... this works man... for real!
 
-Ah... almost forgot... you can set the blockchain difficult too... 
+Ah... almost forgot... you can set yours blockchain's difficult too... 
 To do so, all you need to do is to change (or instantiate from the beginning) the difficult parameter
 ````ruby
 blockchain = Cryptoruby::Blockchain.new(3) 

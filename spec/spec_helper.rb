@@ -1,5 +1,14 @@
 require "bundler/setup"
 require "cryptoruby"
+require "rspec"
+require "simplecov"
+require "coveralls"
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter::new([
+                                                                  SimpleCov::Formatter::HTMLFormatter,
+                                                                  Coveralls::SimpleCov::Formatter
+                                                                ])
+SimpleCov.start
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
