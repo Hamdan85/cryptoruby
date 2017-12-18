@@ -39,8 +39,8 @@ module Cryptoruby
           p 'Previous hash doesnt match with the current one'
           return false
         end
-        return true
       end
+      return true
     end
 
     def export
