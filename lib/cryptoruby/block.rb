@@ -23,7 +23,7 @@ module Cryptoruby
         loop do
           @nonce  += 1
           @hash    = digest_hash
-          break if @hash[0..@difficult] =~ /^0*$/
+          break if @hash[0..@difficult] =~ /^0*$/ || @difficult.zero?
         end
       end
 

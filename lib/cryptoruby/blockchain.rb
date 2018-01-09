@@ -27,7 +27,7 @@ module Cryptoruby
         previous_block = blocks[index]
 
         if current_block.hash != current_block.digest_hash
-          p 'Hash is different from digest'
+          p "Hash is different from digest on block of index #{index + 1}"
           return false
         end
 
